@@ -1,0 +1,36 @@
+var target = Math.floor(Math.random()* 100);
+
+console.log(target);
+
+var guess = -1;
+var difference;
+
+while (guess !=target){
+	guess = parseInt(prompt("Guess Between 1-100"));
+	difference = Math.abs(target - guess);
+
+	if (difference > 50){
+		console.log("Real Cold!!!");
+	}
+	else if(difference > 40){
+		console.log("Cold!!");
+	}
+	else if (difference >30){
+		console.log("Warm!");
+	}
+	else if(difference > 20){
+		console.log("Hot!");
+	}
+	else if(difference > 10){
+		console.log("Burning!");
+	}
+	else( target == guess)
+		{console.log("You got it!");
+}
+}
+
+// one problem, if the target is 50 for example, and the user guess is 45, it will output "Burning!" and "You got it!".
+// in this code if the guess is within 10 'steps' or 'points' from the target, it displays two outputs, which is not correct
+//How do I only display you got it IF target === guess(ie in line 27)
+
+
