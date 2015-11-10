@@ -1,6 +1,6 @@
 function stringTool(str){
 var howManyWords = str.split(' ').length;	
-var	words = str.split(' ');
+var words = str.split(' ');
 var average = 0;
 var total = 0;
 
