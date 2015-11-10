@@ -1,0 +1,18 @@
+function stringTool(str){
+var howManyWords = str.split(' ').length;	
+var	words = str.split(' ');
+var average = 0;
+var total = 0;
+
+for (var i =0; i < words.length; i++){
+	total += words[i].length
+}	
+average = total / words.length;
+
+console.log("There are " + howManyWords +(" words in the sentence. The average length of each word is "+ average +".") )
+
+}
+
+
+var sentence = ("Today is tuesday, it is 12:34 in the morning and I had coffee and a Bagel for breakfast");
+stringTool((sentence));
